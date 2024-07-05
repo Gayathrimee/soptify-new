@@ -20,6 +20,7 @@
     flex-direction: column;
     background-color: #000000;
     height: 100%;
+    overflow: hidden;
 }
 .main{
     display: flex;
@@ -43,7 +44,7 @@
     min-height: 0;
     z-index: 4;
     max-width: 420px;
-    min-width: 360px;
+    /* min-width: 360px; */
     width: 100%;
     flex: 1;
     position:sticky;
@@ -53,6 +54,7 @@
     right: 0;
     max-height: 839px;
     height: 100%;
+    height: 90.3vh;
 }
 .side{
     display: flex;
@@ -353,12 +355,18 @@
 }
 .boody{
     flex: 2;
-    overflow-x: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
     width: 100%;
     display: flex;
     flex-direction: column;
     border-radius: 8px;
     /* gap:8px; */
+    height: 90.3vh;
+    scrollbar-width: none;
+}
+.in-boody{
+    /* overflow-y: scroll; */
 }
 .hdrr{
     position: sticky;
@@ -380,17 +388,16 @@
     justify-content: space-between;
     align-items: center;
     max-width: 1955px;
+    background-color: #121212;
     /* padding: 0 clamp(16px,16px +(100vw - 420*1px - 420*1px - 600px)/424*8,24px); */
     padding-left:24px;
     padding-block: 0;
     padding-right: 31.5px;
     height: 64px;
-    background-color: #121212;
     position: sticky;
     top: 0;
     left: 0;
     right: 0;
-
 }
 .hd-left{
     display: flex;
@@ -450,8 +457,9 @@
     min-height: calc(-673px + 100vh);
     scroll-behavior: smooth;
     padding-bottom: 32px;
+    /* background-color: rgba(255,255,255,0.1); */
     background-color: #121212;
-    /* background:linear-gradient(to top,rgba(0,0,0,0) 10%,#1a1919 80%); */
+    background:linear-gradient(to top,#121212 0%,#1f1f1f 200%);
     /* border-radius: 8px; */
     overflow: hidden;
 }
@@ -489,6 +497,7 @@
     min-height: 60px;
     align-items: flex-end;
     margin-top: -6px;
+    padding-inline: 15px;
 }
 .pa{
     display: block;
@@ -521,61 +530,22 @@
     grid-template-columns: repeat(6,1fr);
     /* gap: 17px; */
 }
-.pritam{
+.pritam , .rahman , .anirudh, .sachin, .mishra{
     /* height: 100%; */
     /* width: 100%; */
     display: inline-flex;
     flex-direction: column;
     row-gap: 8px;
-    padding-block: 12px;
-    padding-inline: 12px;
-    cursor: pointer;
-}
-.rahman{
-    /* height: 100%; */
-    /* width: 100%; */
-    display: inline-flex;
-    flex-direction: column;
-    row-gap: 8px;
-    padding-block: 12px;
-    padding-inline: 12px;
-    cursor: pointer;
-}
-.anirudh{
-    /* height: 100%; */
-    /* width: 100%; */
-    display: inline-flex;
-    flex-direction: column;
-    row-gap: 8px;
-    padding-block: 12px;
-    padding-inline: 12px;
-    cursor: pointer;
-}
-.sachin{
-    /* height: 100%; */
-    /* width: 100%; */
-    display: inline-flex;
-    flex-direction: column;
-    row-gap: 8px;
-    padding-block: 12px;
-    padding-inline: 12px;
-    cursor: pointer;
-}
-.mishra{
-    /* height: 100%; */
-    /* width: 100%; */
-    display: inline-flex;
-    flex-direction: column;
-    row-gap: 8px;
-    padding-block: 12px;
-    padding-inline: 12px;
+    padding-block: 17px;
+    padding-right: 12px;
+    padding-left: 13px;
     cursor: pointer;
 }
 .pic{
     border-radius: 50%;
     width: 100%;
     /* padding-bottom: 100%; */
-    box-shadow: 0 8px 24px rgba(0,0,0,.5);
+    box-shadow: 0 8px 24px rgba(0,0,0,.1);
     height: 100%;
 }
 .prit-pic img{
@@ -604,6 +574,7 @@
     flex-basis: 100%;
     align-items: left;
     text-align: left;
+    padding-top: 5px;
 }
 .arj a{
     text-decoration: none;
@@ -618,12 +589,27 @@
     overflow-x:hidden ;
 }
 .arti{
-    font-size: 0.125rem;
+    font-size: 0.8125rem;
     font-weight: 400;
     font-family: circ-regular;
 }
 .arti span{
     color: #b3b3b3;
+}
+.pritam:hover .but button{
+    opacity: 1;
+}
+.rahman:hover .but button{
+    opacity: 1;
+}
+.anirudh:hover .but button{
+    opacity: 1;
+}
+.sachin:hover .but button{
+    opacity: 1;
+}
+.mishra:hover .but button{
+    opacity: 1;
 }
 .pritam:hover{
     background:linear-gradient(to bottom,rgba(0,0,0,0) 20%,#121212 80%);
@@ -656,12 +642,11 @@
     border-radius: 4px;
 }
 .footer{
-    background-color: #121212;
     padding-top: 40px;
     width: 100%;
 }
 .foot-pad{
-    background-color: rgb(18,18,18);
+    /* background-color: rgb(18,18,18); */
     padding: 8px 16px 40px;
     box-sizing: border-box;
     width: 100%;
@@ -754,11 +739,13 @@ hr{
     width: 100%;
     z-index: 6;
     position: sticky;
-    bottom: 8px;
+    bottom: 0px;
     left: 0;
     right: 0;
-    width: 99%;
-    padding-left: 10px;
+    width: 99.1%;
+    padding-left: 8px;
+    margin-bottom :12px;
+    padding-right: 15px;
 }
 .boott{
     display: flex;
@@ -806,8 +793,26 @@ hr{
 .botm-right span{
    /* padding:32px;  */
 }
-
-
+.but{
+   position: relative;
+   /* display: none;  */
+}
+.but button{
+    position: absolute;
+    top: -55px;
+    left: 150px;
+    width: 25%;
+    height: 50px;
+    background: #239108;
+    border-radius: 50%;
+    opacity: 0;
+}
+.but span i{
+    color: #000000;
+    font-size: 21px;
+    width: 10px;
+    height: 10px;
+}
 
 
 
@@ -826,6 +831,40 @@ hr{
 
 }
 
+@media screen and (min-width:860px){
+
+.sidebar{
+    min-width: 420px;
+}    
+}
+
+@media screen and (max-width:859px){
+
+.sidebar{
+    max-width: 420px;
+    min-width: 360px;
+    width: 100%;
+}    
+}
+@media  screen and (max-width:893px) {
+    
+.sidebar{
+    height: 86.5vh;
+}  
+.boody{
+    height: 86.5vh;
+} 
+.bottom{
+    margin-bottom:0;
+    height: 95px;
+    overflow: hidden;
+    width: 98%;
+}
+.botm-pad{
+    padding-block: 20px;
+}
+}
+
 
 @media screen and (max-width:931px) {
     
@@ -835,6 +874,13 @@ hr{
  .mishra, .sachin, .anirudh, .rahman{
     display: none;
  }
+}
+
+@media screen and (max-width:1171px){
+
+.pa h2{
+    font-size: 1rem;
+}
 }
 
 @media  screen and (min-width:932px) {
@@ -897,7 +943,7 @@ hr{
 @media screen and (min-width:1440px) {
  
 .sidebar{
-    height: 90.5vh;
+    height: 90.3vh;
     max-height: 100%;
 }    
 }
