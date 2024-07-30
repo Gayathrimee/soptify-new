@@ -59,11 +59,14 @@
     cursor: pointer;
     padding: 0px;
     align-self: center;
+    height: 32px;
+    background: #ffffff;
+    padding: 4px 16px;
 }
 .open_app span{
-    padding-block: 6px;
-    padding-inline: 16px;
-    background: #f0f0f0;
+    /* padding-block: 6px;
+    padding-inline: 16px; */
+    /* background: #ffffff; */
     transform: scale(1.04);
     font-family: circ-bold;
     font-size: 0.8125rem;
@@ -71,10 +74,13 @@
     letter-spacing: -0.05px;
     border: 0px;
     border-radius: 999px;
-    display: inline-block;
+    display: inline-flex;
     text-align: center;
     cursor: pointer;
     align-self: center;
+    /* height: 24px; */
+    justify-content: center;
+    align-items: center;
 }
 .three_lines{
     display: flex;
@@ -213,14 +219,66 @@
 .up-right{
     margin-bottom: 40px;
 }
+.footerss{
+    text-align: start;
+}
+.footer{
+    padding: 0;
+}
 .footerss .legal{
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
     padding-top: 16px;
 }
-
-
+.icon{
+    box-sizing: border-box;
+}
+.icon a{
+    padding: 0;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    background-color: rgb(41,41,41);
+}
+.mobile-legals{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    padding-top: 16px;
+}
+.mob-leeg{
+    display: flex;
+    flex-flow: wrap;
+}
+.mob-lg{
+    display: flex;
+    flex-flow: wrap;
+}
+.safe a{
+    margin-bottom: 8px;
+}
+.safe span{
+    font-size: 0.875rem;
+}
+.foot-down{
+    padding: 0;
+    margin: 0;
+    flex: 0 0 auto;
+    flex-flow: row;
+    align-items: end;
+}
+.ft-dwn{
+    padding-right: 16px;
+}
+.ft-pad{
+    padding: 0;
+}
+.english{
+    margin: 0;
+    padding: 0;
+    padding-top: 16px;
+}
 /* .popularss{
     padding: 0 16px 16px;
 }
@@ -302,10 +360,18 @@
 }
 }
 
-@media screen and (min-width:768px){
+/* @media screen and (min-width:768px){
 
 .up-left{
-    flex-direction: column;
-    /* flex-flow: column wrap; */
+    flex-direction: row;
+    flex-flow: column wrap;
 }
+} */
+
+@media screen and (min-width:992px){
+
+.up-left{
+    flex-flow: row;
+}
+    
 }
