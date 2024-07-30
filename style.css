@@ -365,9 +365,9 @@
     height: 90.3vh;
     scrollbar-width: none;
 }
-.in-boody{
-    /* overflow-y: scroll; */
-}
+/* .in-boody{
+    overflow-y: scroll;
+} */
 .hdrr{
     position: sticky;
     top: 0;
@@ -382,6 +382,9 @@
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     text-align: center;
+}
+.hdrr2{
+    display: none;
 }
 .in-head{
     display: flex;
@@ -452,6 +455,9 @@
 }
 .log span{
     padding: 13px 32px;
+}
+.main_body2{
+    display: none;
 }
 .main-body{
     min-height: calc(-673px + 100vh);
@@ -790,9 +796,9 @@ hr{
     padding: 13px 32px;
     border-radius: 9999px;
 }
-.botm-right span{
-   /* padding:32px;  */
-}
+/* .botm-right span{
+   padding:32px; 
+} */
 .but{
    position: relative;
    /* display: none;  */
@@ -819,15 +825,11 @@ hr{
 
 
 
-
 @media screen and (min-width:768px) {
     
 .arti{
     font-size: 0.875rem;
 }    
-.up-left{
-    flex-flow: row;
-}
 
 }
 

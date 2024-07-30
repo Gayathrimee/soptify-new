@@ -1,0 +1,311 @@
+@media screen and (max-width:768px) {
+
+.main{
+    padding: 0;
+}
+.sidebar{
+    display: none;
+ }   
+.hdrr{
+    display: none;
+}
+.mag_glass{
+    height: 16px;
+}
+.white_lines{
+    height: 16px;
+}
+.hdrr2{
+    display: flex;
+    background: #000000;
+    gap: 16px;
+    padding: 16px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    /* width: 100%; */
+    height: 56px;
+    max-width: 768px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+}
+.hdr2_left{
+    display: flex;
+}
+.hdr2_left a{
+    height: 32px;
+}
+.hdr2_right{
+    display: flex;
+    align-items: center;
+}
+.hdr2_right a{
+    display: flex;
+    padding: 0 16px;
+}
+.open_app{
+    font-family: circ-bold;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    background: transparent;
+    border: 0px;
+    border-radius: 999px;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    padding: 0px;
+    align-self: center;
+}
+.open_app span{
+    padding-block: 6px;
+    padding-inline: 16px;
+    background: #f0f0f0;
+    transform: scale(1.04);
+    font-family: circ-bold;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    letter-spacing: -0.05px;
+    border: 0px;
+    border-radius: 999px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    align-self: center;
+}
+.three_lines{
+    display: flex;
+    align-items: center;
+}
+.three_lines button{
+    background: none;
+    margin: 0;
+    margin-inline-start: 16px;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+.three_lines span{
+    display: flex;
+}
+.white_lines{
+    height: 24px;
+    width: 24px;
+    fill: currentColor;
+}
+.main-body{
+    height: 100%;
+}
+.main-b{
+    margin-top: 56px;
+    box-sizing: border-box;
+}
+.main-pad{
+    padding: 0;
+}
+.in-main-pad{
+    padding: 0;
+    max-width: 768px;
+    flex-direction: column;
+    gap: 0;    
+}
+.main-body{
+    display: none;
+}
+.main_body2{
+    display: block;
+    background: #121212;
+}
+.boody{
+    height: 100%;
+    background: #000000;
+}
+.main_body2{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.main_body2_margin{
+    position: relative;
+    margin-top: 56px;
+    box-sizing: border-box;
+}
+.popularss{
+    padding: 0 0 16px 16px;
+}
+.spotify_songs{
+    display: flex;
+    flex-direction: column;
+    /* overflow-x:scroll; */
+}
+.song_head{
+    margin-bottom: 12px;
+    margin-top: 24px;
+    box-sizing: border-box;
+}
+.song_head h2{
+    font-size: 1.25rem;
+    font-family: circ-bold;
+    font-weight: 700;
+    color: #ffffff;
+}
+.songs__and_names{
+    display: flex;
+    flex-flow: row;
+    overflow-x:scroll;
+    /* margin-left: -50vw;
+    margin-right: -50vw;
+    position: relative;
+    right: 50%;
+    left: 50%; */
+    /* width: 100%; */
+    scrollbar-width: none;
+}
+.songs_pad{
+    box-sizing: border-box;
+    /* margin-inline-start: 8px; */
+    scroll-snap-align: center;
+    max-inline-size: 168px;
+    display: inline-flex;
+    flex-direction: column;
+    row-gap: 8px;
+    padding: 8px;
+    /* height: 198px; */
+    width: 168px;
+}
+.songs_pad:first-child{
+    padding-inline-start: 0;
+}
+.in_names{
+    width: 100%;
+    box-sizing: border-box;
+    /* height: 198px; */
+    /* width: 168px; */
+}
+.in_names img{
+    inline-size: 100%;
+    border-radius: 4px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    height: 152px;
+    width: 152px;
+}
+.the_name{
+    display: flex;
+    /* align-items: center; */
+    flex-basis: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.the_name a{
+    position: relative;
+    z-index: 1;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: circ-regular;
+    text-decoration: none;
+    color: #ffffff;
+}
+.up-right{
+    margin-bottom: 40px;
+}
+.footerss .legal{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    padding-top: 16px;
+}
+
+
+/* .popularss{
+    padding: 0 16px 16px;
+}
+.popular{
+    box-sizing: border-box;
+}
+.pop{
+    margin-top: 24px;
+    margin-bottom: 12px;
+    max-height: 24px;
+    box-sizing: border-box;
+}
+.in-pop{
+    margin: 0;
+    padding-inline: 0;
+    min-height:0;
+    max-height: 24px;
+    align-items: center;
+}
+.show{
+    display: none;
+}
+.pa h2{
+    font-size: 1.25rem;
+    font-family: circ-bold;
+    max-height: 24px;
+}
+.pritam:hover .but button{
+    opacity: 0;
+}
+.arts{
+    display: flex;
+    flex-flow: row;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+.mishra, .sachin, .anirudh, .rahman{
+    display: flex;
+}
+.pritam,.rahman,.mishra, .sachin, .anirudh{
+    margin-inline-start: 8px;
+    scroll-snap-align:center;
+    max-inline-size: 168px;
+    row-gap:8px;
+    padding:8px;
+    padding-block: 8px;
+} */
+.bottom{
+    display: none;
+}
+}
+
+
+@media screen and (max-width:767px) {
+
+.foot-up{
+    flex-direction: column;
+}
+
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+
+.up-left{
+    flex-direction: row;
+    /* flex-flow: column wrap; */
+}
+.foot-up{
+    flex-direction: column;
+}
+.up-right{
+    margin-bottom: 40px;
+}
+.footerss .legal{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    padding-top: 16px;
+}
+}
+
+@media screen and (min-width:768px){
+
+.up-left{
+    flex-direction: column;
+    /* flex-flow: column wrap; */
+}
+}

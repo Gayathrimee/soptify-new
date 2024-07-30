@@ -1,0 +1,40 @@
+.rahman{
+    height: 100%;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    row-gap: 8px;
+    padding-block: 12px;
+    padding-inline: 12px;
+    cursor: pointer;
+}
+.anirudh{
+    height: 100%;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    row-gap: 8px;
+    padding-block: 12px;
+    padding-inline: 12px;
+    cursor: pointer;
+}
+.sachin{
+    height: 100%;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    row-gap: 8px;
+    padding-block: 12px;
+    padding-inline: 12px;
+    cursor: pointer;
+}
+.mishra{
+    height: 100%;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    row-gap: 8px;
+    padding-block: 12px;
+    padding-inline: 12px;
+    cursor: pointer;
+}
